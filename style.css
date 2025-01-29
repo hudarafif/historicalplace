@@ -1,0 +1,137 @@
+body{
+    background-color: #2c276b;
+}
+
+.hero {
+  background: url('path-to-your-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero{
+  background-image: url('./assets/img/bg.jpg');
+  background-size: cover;
+  height: 80vh;
+  background-position: top;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+.hover-card:hover {
+        transform: scale(1.05); /* Membesarkan kartu sedikit */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+    }
+
+.card-img-top {
+  height: 200px;
+   object-fit: cover; /* Memastikan gambar selalu pas di dalam kartu */
+}
+
+
+#map {
+    height: 70vh; /* Mengisi seluruh tinggi viewport */
+    width: 80%;   /* Mengisi seluruh lebar viewport */
+    margin: 0 auto; /* Mengatur posisi map agar berada di tengah */
+    border: 10px solid #f5f3f2;
+    border-radius: 10px;
+}
+
+.info.leaflet-control {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info.leaflet-control h6 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+
+}
+header {
+  background: linear-gradient(90deg, #007bff, #6610f2);
+  padding: 10px 0;
+}
+.navbar-container .nav-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container .nav-list ul li {
+  margin: 0 15px;
+}
+.navbar-container .nav-list ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar-container .nav-list ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Container */
+.sidebar {
+  width: 300px; /* Lebar sidebar */
+  height: 100%; /* Tinggi penuh */
+  background-color: #2e2765; /* Warna ungu sesuai tema */
+  color: white; /* Warna teks */
+  position: fixed;
+  top: 0;
+  right: 0; /* Agar sidebar muncul dari kanan */
+  z-index: 1000; /* Pastikan di atas elemen lain */
+  overflow-y: auto; /* Agar konten dapat digulir */
+  padding: 20px; /* Tambahkan jarak */
+  transform: translateX(100%); /* Tersembunyi secara default */
+  transition: transform 0.3s ease-in-out; /* Animasi */
+}
+
+
+.sidebar.active {
+  transform: translateX(0); /* Sidebar muncul */
+}
+
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar .description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sidebar .gallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Tambahkan efek rounded */
+}
+
+
+/* Close Button */
+.sidebar .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
